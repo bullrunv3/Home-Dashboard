@@ -111,11 +111,11 @@
                         <div class="line-animations">
                             <ul class="resp-tabs-list hor_1">
                                 
-                                 <li class="resp-tab-active active"><a href="/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
-                                <li class="autopool"><a href="https://1dapp.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
-                                <li class="trans"><a href="https://1dapp.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
-                                <li class="team2"><a href="https://1dapp.github.io/Team"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
-                                <li class="media2"><a href="https://1dapp.github.io/Media"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
+                                 <li class="resp-tab-active active"><a href="https://bullrunv3.github.io/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
+                                <li class="autopool"><a href="https://bullrunv3.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
+                                <li class="trans"><a href="https://bullrunv3.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
+                                <li class="team2"><a href="https://bullrunv3.github.io/Team"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
+                                <li class="media2"><a href="https://bullrunv3.github.io/Media"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
                              
                                 <li class="logoutuser"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
                           
@@ -206,19 +206,19 @@ function getVariableData() {
 
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-            $('.currentuseridlink').html("https://1dapp.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').html("https://bullrunv3.github.io/signup/?referralid=" + result1.id);
 
-            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup/?referralid=" + result1.id);
-
-
-
-            $('.currentuseridlink').val("https://1dapp.github.io/signup/?referralid=" + result1.id);
-
-            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv3.github.io/signup/?referralid=" + result1.id);
 
 
 
-            $('.sharebutton').attr('data-url', "https://1dapp.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').val("https://bullrunv3.github.io/signup/?referralid=" + result1.id);
+
+            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://bullrunv3.github.io/signup/?referralid=" + result1.id);
+
+
+
+            $('.sharebutton').attr('data-url', "https://bullrunv3.github.io/signup/?referralid=" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -250,7 +250,7 @@ function getVariableData() {
 function getReferralCommission() {
     
 
-    var level1 = parseFloat(0.0075); var level2 = parseFloat(0.005); var level3 = parseFloat(0.0025); var level4 = parseFloat(0.000005);
+    var level1 = parseFloat(0.01); var level2 = parseFloat(0.005); var level3 = parseFloat(0.0025); var level4 = parseFloat(0.000005);
 
     var referraltotal = parseFloat(0);
 
@@ -1851,7 +1851,7 @@ $(document).ready(function () {
         $('.logoutuser').click(function () {
         
             var account = localStorage.removeItem("address", null);
-            location.href = "https://1dapp.github.io/signin";
+            location.href = "https://bullrunv3.github.io/signin";
         });
     });
     </script>
